@@ -22,7 +22,7 @@ Aws.config.update({credentials: Aws::Credentials.new('your_access_key_id', 'your
 
 Start a QLDB session
 ```
-session = Aws::Qldb::MiniDriver::Session.start('sampleLedgerName')
+session = Aws::QLDB::MiniDriver::Session.start('sampleLedgerName')
 ```
 
 Start a transaction
