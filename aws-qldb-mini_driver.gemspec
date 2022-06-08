@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
   spec.summary = "QLDB Minidriver for Ruby"
   spec.description = "Non-parametrized queries/DML for QLDB and basic transaction management."
   spec.homepage = "https://github.com/InvestIMBY/aws-qldb-mini_driver"
-  spec.required_ruby_version = ">= 2.6.0"
+  spec.required_ruby_version = ">= 2.7.0"
 
   spec.metadata["allowed_push_host"] = "https://addyinvest.com"
 
@@ -30,4 +30,5 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency "aws-sdk-qldb"
   spec.add_dependency "aws-sdk-qldbsession"
+  spec.metadata["rubygems_mfa_required"] = "true"
 end
