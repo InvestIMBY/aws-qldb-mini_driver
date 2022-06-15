@@ -1,5 +1,9 @@
 # frozen_string_literal: true
 
+require "simplecov"
+SimpleCov.minimum_coverage 95
+SimpleCov.start
+
 require "aws/qldb/mini_driver"
 require "webmock/rspec"
 
