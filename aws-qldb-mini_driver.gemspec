@@ -16,7 +16,7 @@ Gem::Specification.new do |spec|
   spec.metadata["allowed_push_host"] = "https://addyinvest.com"
 
   spec.metadata["homepage_uri"] = spec.homepage
-  spec.metadata["source_code_uri"] = "https://github.com/InvestIMBY/aws-qldb-mini_drive"
+  spec.metadata["source_code_uri"] = "https://github.com/InvestIMBY/aws-qldb-mini_driver"
   spec.metadata["changelog_uri"] = "https://github.com/InvestIMBY/aws-qldb-mini_driver/blob/main/CHANGELOG.md"
 
   spec.files = Dir.chdir(__dir__) do
