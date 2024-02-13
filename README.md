@@ -15,7 +15,7 @@ If bundler is not being used to manage dependencies, install the gem by executin
 AWS credetials are expected to be in place, e.g.
 
 ```
-Aws.config.update({credentials: Aws::Credentials.new('your_access_key_id', 'your_secret_access_key'))
+Aws.config.update(credentials: Aws::Credentials.new('your_access_key_id', 'your_secret_access_key'))
 ```
 
 ## Usage
