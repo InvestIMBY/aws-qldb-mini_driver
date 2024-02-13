@@ -2,12 +2,12 @@
 
 require "aws-sdk-qldb"
 require "aws-sdk-qldbsession"
-require_relative "mini_driver/version"
+require_relative "aws-qldb-mini_driver/version"
 
-require_relative "mini_driver/utils"
-require_relative "mini_driver/clients"
-require_relative "mini_driver/session"
-require_relative "mini_driver/transaction"
+require_relative "aws-qldb-mini_driver/utils"
+require_relative "aws-qldb-mini_driver/clients"
+require_relative "aws-qldb-mini_driver/session"
+require_relative "aws-qldb-mini_driver/transaction"
 
 module Aws
   module QLDB
