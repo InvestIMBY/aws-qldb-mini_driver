@@ -4,7 +4,7 @@ require "simplecov"
 SimpleCov.minimum_coverage 95
 SimpleCov.start
 
-require "aws/qldb/mini_driver"
+require "aws-qldb-mini_driver"
 require "webmock/rspec"
 
 RSpec.configure do |config|
