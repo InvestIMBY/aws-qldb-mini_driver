@@ -8,6 +8,7 @@ require_relative "aws-qldb-mini_driver/utils"
 require_relative "aws-qldb-mini_driver/clients"
 require_relative "aws-qldb-mini_driver/session"
 require_relative "aws-qldb-mini_driver/transaction"
+require_relative "aws-qldb-mini_driver/ion_parser"
 
 module Aws
   module QLDB
