@@ -22,8 +22,8 @@ module Aws
 
         def fetch_page(next_page_token)
           QLDB_SESSION_CLIENT.send_command(session_token: @token, fetch_page: {
-            next_page_token: next_page_token, transaction_id: @transaction_id
-          })
+                                             next_page_token: next_page_token, transaction_id: @transaction_id
+                                           })
         end
 
         def insert(statement)
