@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative "lib/aws/qldb/mini_driver/version"
+require "aws-qldb-mini_driver/version"
 
 Gem::Specification.new do |spec|
   spec.name = "aws-qldb-mini_driver"
