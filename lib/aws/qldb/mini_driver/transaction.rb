@@ -20,6 +20,12 @@ module Aws
           resp
         end
 
+        def fetch_page(next_page_token)
+          QLDB_SESSION_CLIENT.send_command(session_token: @token, fetch_page: {
+            next_page_token: next_page_token, transaction_id: @transaction_id
+          })
+        end
+
         def insert(statement)
           resp = execute(statement)
           resp.execute_statement.first_page.values.first.ion_binary[-22..]
