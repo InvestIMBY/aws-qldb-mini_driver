@@ -37,7 +37,7 @@ module Aws
       def replace_keys(annotations, numbered_key_hash, offset)
         numbered_key_hash.each_with_object({}) do |(key, val), hash|
           hash[annotations[key - offset]] = val.is_a?(Hash) ? replace_keys(annotations, val, offset) : val
-        end.with_indifferent_access
+        end
       end
 
       def sequence_parser(binary, index)
@@ -133,7 +133,7 @@ module Aws
       def parse_decimal(binary)
         is_negative_exponent = binary[0] & 0xC0 == 0xC0
         exponent = (binary[0] & 0x3F) * (is_negative_exponent ? -1 : 1)
-        return 0 if binary[1].blank?
+        return 0 if binary[1].nil?
 
         coefficient = parse_int(binary[1..])
         (10**exponent) * coefficient
